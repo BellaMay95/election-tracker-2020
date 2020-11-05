@@ -1,0 +1,359 @@
+{
+    "AL": {
+        "name": "Alabama",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "AK": {
+        "name": "Alaska",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "AZ": {
+        "name": "Arizona",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "AR": {
+        "name": "Arkansas",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "CA": {
+        "name": "California",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "CO": {
+        "name": "Colorado",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "CT": {
+        "name": "Connecticut",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "DE": {
+        "name": "Delaware",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "DC": {
+        "name": "District of Colombia",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "FL": {
+        "name": "Florida",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "GA": {
+        "name": "Georgia",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "HI": {
+        "name": "Hawaii",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "ID": {
+        "name": "Idaho",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "IL": {
+        "name": "Illinois",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "IN": {
+        "name": "Indiana",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "IA": {
+        "name": "Iowa",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "KS": {
+        "name": "Kansas",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "KY": {
+        "name": "Kentucky",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "LA": {
+        "name": "Louisiana",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "ME": {
+        "name": "Maine",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "MD": {
+        "name": "Maryland",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "MA": {
+        "name": "Massachusetts",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "MI": {
+        "name": "Michigan",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "MN": {
+        "name": "Minnesota",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "MS": {
+        "name": "Mississippi",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "MO": {
+        "name": "Missouri",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "MT": {
+        "name": "Montana",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "NE": {
+        "name": "Nebraska",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "NV": {
+        "name": "Nevada",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "NH": {
+        "name": "New Hampshire",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "NJ": {
+        "name": "New Jersey",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "NM": {
+        "name": "New Mexico",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "NY": {
+        "name": "New York",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "NC": {
+        "name": "North Carolina",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "ND": {
+        "name": "North Dakota",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "OH": {
+        "name": "Ohio",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "OK": {
+        "name": "Oklahoma",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "OR": {
+        "name": "Oregon",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "PA": {
+        "name": "Pennsylvania",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "RI": {
+        "name": "Rhode Island",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "SC": {
+        "name": "South Carolina",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "SD": {
+        "name": "South Dakota",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "TN": {
+        "name": "Tennessee",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "TX": {
+        "name": "Texas",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "UT": {
+        "name": "Utah",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "VT": {
+        "name": "Vermont",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "VA": {
+        "name": "Virginia",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "WA": {
+        "name": "Washington",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "WV": {
+        "name": "West Virginia",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "WI": {
+        "name": "Wisconsin",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    },
+    "WY": {
+        "name": "Wyoming",
+        "Trump": 0,
+        "Biden": 0,
+        "totalVotes": 0,
+        "reported": 0
+    }
+}
