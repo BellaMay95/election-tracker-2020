@@ -1,20 +1,20 @@
 const { JSDOM } = require( "jsdom" );
 const axios = require("axios");
 const fs = require("graceful-fs");
+const createCsvWriter = require("csv-writer").createObjectCsvWriter;
 
 const stateList = [ 'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY' ];
 
 var stateData = require('./stateData.json');
-const { type } = require("jquery");
 
 function getStateData(state) {
     return new Promise((resolve, reject) => {
-        console.log("getting data for state " + state);
+        // console.log("getting data for state " + state);
         let url = 'https://www.yahoo.com/elections/state/' + state;
 
         return axios.get(url)
         .then((response) => {
-            console.log("success!");
+            // console.log("success!");
             let document = new JSDOM(response.data).window.document;
     
             let reported = document.querySelector(".ballot-results-percentage").innerHTML;
@@ -24,7 +24,7 @@ function getStateData(state) {
     
             parseStateData(state, presidentData, reported)
             .then(() => {
-                console.log("finished parsing!");
+                // console.log("finished parsing!");
                 resolve();
             })
             .catch((error) => {
@@ -42,8 +42,8 @@ function getStateData(state) {
 
 function parseStateData(state, data, reported) {
     return new Promise((resolve, reject) => {
-        console.log("starting parse...");
-        stateData[state].reported = Number(reported.substring(0, reported.length - 1));
+        // console.log("starting parse...");
+        stateData[state].reported = Number(reported.substring(0, reported.length - 1))/100;
 
         let totalVotes = 0;
         let trumpVotes = 0;
@@ -65,17 +65,49 @@ function parseStateData(state, data, reported) {
         stateData[state].Trump = trumpVotes;
         stateData[state].Biden = bidenVotes;
         stateData[state].totalVotes = totalVotes;
+        stateData[state].trumpPercent = (trumpVotes/totalVotes);
+        stateData[state].bidenPercent = (bidenVotes/totalVotes);
 
         resolve();
     });    
 }
 
-function printStateData() {
+async function printStateData() {
     fs.writeFile('stateData.txt', JSON.stringify(stateData), () => {
-        console.log('wrote to file!');
+        console.log('wrote JSON to file!');
     });
 
-    console.log(stateData);
+    var csvWriter = createCsvWriter({
+        path: 'stateData.csv',
+        header: [
+            {id: 'name', title: 'State'},
+            {id: 'reported', title: "Reported %"},
+            {id: 'Trump', title: 'Trump Votes'},
+            {id: 'Biden', title: 'Biden Votes'},
+            {id: 'trumpPercent', title: 'Trump %'},
+            {id: 'bidenPercent', title: 'Biden %'},
+            {id: 'totalVotes', title: 'Total Votes'}
+        ]
+    });
+
+    let csvData = await restructureStateData(stateData)
+
+    csvWriter.writeRecords(csvData)
+    .then(() => {
+        console.log('Finished writing to CSV File!');
+    })
+}
+
+function restructureStateData(data) {
+    return new Promise((resolve, reject) => {
+        var newData = new Array();
+
+        for (let i = 0; i < stateList.length; i++) {
+            newData.push(data[stateList[i]]);
+        }
+
+        resolve(newData);
+    });
 }
 
 function fetchAllData() {
