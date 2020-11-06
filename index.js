@@ -82,10 +82,10 @@ async function printStateData() {
         header: [
             {id: 'name', title: 'State'},
             {id: 'reported', title: "Reported %"},
-            {id: 'Trump', title: 'Trump Votes'},
-            {id: 'Biden', title: 'Biden Votes'},
             {id: 'trumpPercent', title: 'Trump %'},
             {id: 'bidenPercent', title: 'Biden %'},
+            {id: 'Trump', title: 'Trump Votes'},
+            {id: 'Biden', title: 'Biden Votes'},
             {id: 'totalVotes', title: 'Total Votes'}
         ]
     });
